@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from "react";
+import Image from "./Image";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-
-  return (
-    <div style={{textAlign: 'center'}}>
-      <h1>You have clicked {count} times.</h1>
-      <button onClick={() => setCount(count - 1)}>Decrease -</button> 
-      <button onClick={() => setCount(0)}>Reset</button>   
-      <button onClick={() => setCount(count + 1)}>Increase +</button>
-    </div>
-  );
+class App extends React.Component {
+  
+  render() {
+    return (
+      <div className="app">
+        <Image />
+      </div>
+    );
+  }
 }
-
-export default App;
+export default App
