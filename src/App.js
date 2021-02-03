@@ -1,14 +1,10 @@
-import React from "react";
-import Image from "./Image";
-
-class App extends React.Component {
-  
-  render() {
-    return (
-      <div className="app">
-        <Image />
-      </div>
-    );
-  }
+import Counter from './Counter';
+function App() {
+  return (
+    <div className="App">
+      <Counter />
+    </div>
+  );
 }
-export default App
+
+export default App;
